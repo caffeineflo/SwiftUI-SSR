@@ -22,6 +22,7 @@
 		497CCBB1270658EA00E6B828 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497CCBAF270658EA00E6B828 /* ListView.swift */; };
 		497CCBB42706595900E6B828 /* Preview+SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497CCBB32706595900E6B828 /* Preview+SwiftUI.swift */; };
 		497CCBB6270684A900E6B828 /* TextField+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497CCBB5270684A900E6B828 /* TextField+Codable.swift */; };
+		497CCBB927075F3200E6B828 /* EncodableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497CCBB827075F3200E6B828 /* EncodableView.swift */; };
 		49D236A127053B3D005F8371 /* SSR_DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D236A027053B3D005F8371 /* SSR_DemoApp.swift */; };
 		49D236A327053B3D005F8371 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D236A227053B3D005F8371 /* ContentView.swift */; };
 		49D236A527053B3F005F8371 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49D236A427053B3F005F8371 /* Assets.xcassets */; };
@@ -45,6 +46,7 @@
 		497CCBAF270658EA00E6B828 /* ListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		497CCBB32706595900E6B828 /* Preview+SwiftUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Preview+SwiftUI.swift"; sourceTree = "<group>"; };
 		497CCBB5270684A900E6B828 /* TextField+Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextField+Codable.swift"; sourceTree = "<group>"; };
+		497CCBB827075F3200E6B828 /* EncodableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncodableView.swift; sourceTree = "<group>"; };
 		49D2369D27053B3D005F8371 /* SSR-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SSR-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49D236A027053B3D005F8371 /* SSR_DemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSR_DemoApp.swift; sourceTree = "<group>"; };
 		49D236A227053B3D005F8371 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -93,7 +95,7 @@
 				497CCB9F270658E500E6B828 /* VStack+Codable.swift */,
 				497CCBA0270658E500E6B828 /* Button+Codable.swift */,
 				497CCBA1270658E500E6B828 /* Image+Codable.swift */,
-				497CCBA2270658E500E6B828 /* TextAlignment+Codable.swift */,
+				497CCBB72706934800E6B828 /* Modifiers */,
 			);
 			path = CodableViews;
 			sourceTree = "<group>";
@@ -113,6 +115,14 @@
 				497CCB92270658C500E6B828 /* FileMonitor.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		497CCBB72706934800E6B828 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				497CCBA2270658E500E6B828 /* TextAlignment+Codable.swift */,
+			);
+			path = Modifiers;
 			sourceTree = "<group>";
 		};
 		49D2369427053B3D005F8371 = {
@@ -135,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				49D236A027053B3D005F8371 /* SSR_DemoApp.swift */,
+				497CCBB827075F3200E6B828 /* EncodableView.swift */,
 				49D236A227053B3D005F8371 /* ContentView.swift */,
 				497CCB9B270658E500E6B828 /* ServerSideSwiftUI */,
 				497CCB96270658DA00E6B828 /* ComposedViews */,
@@ -244,6 +255,7 @@
 				497CCBAB270658E500E6B828 /* ViewFactory.swift in Sources */,
 				497CCB99270658DA00E6B828 /* HomeView.swift in Sources */,
 				49D236A127053B3D005F8371 /* SSR_DemoApp.swift in Sources */,
+				497CCBB927075F3200E6B828 /* EncodableView.swift in Sources */,
 				497CCBB6270684A900E6B828 /* TextField+Codable.swift in Sources */,
 				497CCB93270658C500E6B828 /* FileMonitor.swift in Sources */,
 				497CCBA5270658E500E6B828 /* Text+Codable.swift in Sources */,

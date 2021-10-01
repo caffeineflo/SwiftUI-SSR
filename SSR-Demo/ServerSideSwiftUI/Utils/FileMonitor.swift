@@ -74,7 +74,10 @@ class LocalJSONFileSource: ObservableObject {
         do {
             codableView = try JSONDecoder().decode(CodableView.self, from: Data(contentsOf: pathURL))
         } catch {
-            print(error)
+            codableView = .text(
+                CodableText(alignment: .center,
+                            content: "\(error)")
+            )
         }
     }
 }

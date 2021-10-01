@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  SSR-Demo
-//
-//  Created by Florian Harr on 9/29/21.
-//
-
 import SwiftUI
 
 struct ContentView: View {

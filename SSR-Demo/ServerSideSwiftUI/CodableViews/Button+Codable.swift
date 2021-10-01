@@ -7,24 +7,40 @@ class ButtonActions: NSObject {
     public class func printThis() {
         print("Button Action performed")
     }
+    
+    @objc
+    public class func openURL(_ url: String) {
+        if let url = URL(string: url) {
+            UIApplication.shared.open(url)
+        }
+    }
 }
 
 struct CodableButton: View, CodableViewVariant {
     var id: UUID = UUID()
     var action: String
     var content: String
+    var parameter: String?
     
-    var allowedActions: [String] = ["printThis"]
+    var allowedActions: [String] = [
+        "printThis",
+        "openURL:"
+    ]
     
     enum CodingKeys: CodingKey {
         case action
         case content
+        case parameter
     }
     
     var body: some View {
         Button(content) {
             if allowedActions.contains(action) {
-                ButtonActions.perform(Selector(action))
+                if let parameter = parameter {
+                    ButtonActions.perform(Selector(action), with: parameter)
+                } else {
+                    ButtonActions.perform(Selector(action))
+                }
             }
         }
     }
